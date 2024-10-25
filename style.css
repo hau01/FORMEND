@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+   *{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;    
+   }
+   body{
+    background: #254d55b5;
+    
+   }
+
+   .container{
+    background: #15706c;
+    width: 700px;   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0  , 0, 0, 0.15);
+   }
+
+ .container h2{
+   font-size: 32px;
+   margin-bottom: 40px; 
+   position: relative;
+   color: rgb(72, 235, 159);
+ }   
+
+ .container h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform:translateX(-50%);
+ }
+
+ .container blockquote{
+    font-size: 26px;
+    min-height: 110px;
+      }
+
+ .container blockquote::before, .quote-box blockquote::after{
+    content:'';
+   }
+
+
+ .container div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+   }
+
+ .container button{
+    background: rgb(72, 235, 159);
+    color:#fff;
+    border-radius: 25px;
+    border: 1px solid rgb(72, 235, 159);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    margin-left: 280px;
+   }
+
+   .container button img{
+      width: 35px;
+      /* margin-right: 10px; */
+   }
+
+
+ .btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 450px;
+   }
+  
+  .btn img {
+    width: 40px; /* Adjust the size of the light bulb image */
+    height: 40px;
+   }
+  
+  #output div {
+      padding: 10px;
+      border-bottom: 1px solid #ccc; /* Add a line between quotes */
+   }
+
+   .delete-btn {
+      margin-top: 5px;  /* Space between quote and delete button */
+   }
+   ion-icon {
+      color: rgb(255, 255, 253);
+   }
+   .quote-card {
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+      background-color: #fafafa;
+  }
+  
+  .delete-btn, .share-btn {
+      margin-top: 5px;
+      margin-right: 5px;
+  }
